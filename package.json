@@ -1,0 +1,22 @@
+{
+  "name": "propshop_mern",
+  "version": "1.0.0",
+  "description": "mern shopping app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adnanali000/proshop_mern.git"
+  },
+  "author": "Adnan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adnanali000/proshop_mern/issues"
+  },
+  "homepage": "https://github.com/adnanali000/proshop_mern#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
