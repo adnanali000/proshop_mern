@@ -3,10 +3,13 @@ import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import colors from 'colors'
 import productRoutes from './routes/productRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 import { notFound,errorHandler } from './middleware/errorMiddleware.js'
 
 
 const app = express()
+
+app.use(express.json())
 
 //mongo db
 connectDB()
@@ -19,6 +22,9 @@ app.get('/',(req,res)=>{
 
 //product routes
 app.use('/api/products',productRoutes)
+
+//user routes
+app.use('/api/users',userRoutes)
 
 //errors
 app.use(notFound)
